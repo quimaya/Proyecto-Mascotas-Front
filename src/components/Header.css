@@ -1,0 +1,10 @@
+header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+div {
+    min-height: 20vh
+}

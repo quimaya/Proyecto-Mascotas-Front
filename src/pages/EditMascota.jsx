@@ -1,9 +1,9 @@
 const EditMascota = () => {
     return (
-        <div>
+        <section>
             EditMascota
         
-        </div>
+        </section>
     )
     
     }

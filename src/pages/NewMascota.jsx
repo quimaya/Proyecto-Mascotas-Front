@@ -1,8 +1,8 @@
 const NewMascota = () => {
     return (
-        <div>
+        <section>
             NewMascota
-        </div>
+        </section>
     )
     
     }
