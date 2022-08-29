@@ -3,7 +3,7 @@ const Buscador = ({setFiltro}) => {
     return (
         <div>
 
-            <input type = "text" onChange={(e) => setFiltro(e.target.value.toLowerCase())}/>
+            <input type = "text" onChange={(e) => setFiltro(e.target.value.toLowerCase())} placeholder="Busca tu mascota aquí"/>
         </div>
     )
     

@@ -1,4 +1,7 @@
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import { JwtContextProvider } from "./context/jwtContext"
+
+
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 
@@ -11,10 +14,13 @@ import Mascotas from "./pages/Mascotas"
 import EditMascota from "./pages/EditMascota"
 
 
+
+
 import React from 'react'
 
 const App = () => {
   return (
+    <JwtContextProvider>
     <div>
     <Router> 
       <Header/>
@@ -30,6 +36,7 @@ const App = () => {
       <Footer/>
     </Router>
     </div>
+    </JwtContextProvider>
   )
 }
 
