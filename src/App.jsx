@@ -17,6 +17,7 @@ import Mascotas from "./pages/Mascotas"
 
 
 import React from 'react'
+import InfoMascota from "./pages/InfoMascota"
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
           
           <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/>
+          <Route path="/infoMascota" element={<InfoMascota/>}/>
           
         </Routes>
       <Footer/>

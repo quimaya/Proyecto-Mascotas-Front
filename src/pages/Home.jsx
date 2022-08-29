@@ -6,11 +6,9 @@ const Home = () => {
 return (
     <section>
         <h2>Bienvenido a tu web de Mascotas favorita</h2>
-        <Link to="/register">¡Registra ya tu mascota!</Link>
-        <p>O inicia sesión <Link to="/login">aquí</Link></p>
-        
-        
-        
+        <img src="/mascotasHome.jpg" alt="logoMascotas" className="logoMascotas"/>
+        <Link to="/register" className="registrarMascota">¡ Registra ya tu mascota !</Link>
+        <p>O inicia sesión <Link to="/login" className="loginMascota">login</Link></p>    
     </section>
 )
 

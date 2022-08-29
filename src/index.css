@@ -1,9 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    background-color: #fcfaf9;
+    color: #111c2b;
+}
+
+h1,h2,h3,h4:root{
+    color: #b8334d;
+}
+
+p:root{
+    color: #183552;
+}
+
 * {
     margin: 0;
-    padding: 0,
-
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 section {
     min-height: 75vh;
 }
+

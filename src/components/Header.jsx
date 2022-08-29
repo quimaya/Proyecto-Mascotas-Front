@@ -13,32 +13,32 @@ const Header = () => {
     return (
         <header>
             <nav>
-                <h2>Su tienda de mascotas favorita</h2>
+                <h2>Mascotas & Pets</h2>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li> <Link to="/mascotas" >Mascotas</Link></li>
+                    <li><Link to="/" className="link">Home</Link></li>
+                    <li> <Link to="/mascotas" className="link">Mascotas</Link></li>
                     {mascota ? (<li>
-                        <Link to ="/profile">Perfil</Link>
+                        <Link to ="/profile" className="link">Perfil</Link>
                     </li>) : 
                     null}
                 </ul>
             </nav>
-            <div>
+            <div className="sesion">
                 {mascota ?
-                    (<>
+                    (<div className="login">
                         <p>
                             ¡Bienvenido {mascota.nick}!
                         </p>
                         <button onClick={()=>
                         logout() & navigate("/")
                         }>Cerrar sesión</button>
-                    </>)
+                    </div>)
                     :
-                    (<div>
+                    (<div className="register">
                         <ul>
-                            <li><Link to="login"> Login</Link> </li>
+                            <li><Link to="login" className="loginLink"> Login</Link> </li>
 
-                            <li><Link to="register"> Registrar</Link></li>
+                            <li><Link to="register" className="registerLink"> Registrar</Link></li>
                         </ul>
 
                     </div>)}

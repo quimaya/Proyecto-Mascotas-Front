@@ -1,16 +1,71 @@
-.register {
-    display:flex;
+.register{
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    
-
+    justify-content: center;
+}
+.registerForm{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 }
 
-.register form {
+.logoRegister{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
     display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+ form{
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    gap: 0,8rem;
-    margin-top: 20px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.register > h2 {
+    text-shadow: 2px 2px #183552;
+    padding-bottom: 5rem;
+}
+
+.registerForm > form > label{
+    color: #183552;
+    font-weight: bolder;
+}
+
+.registerForm > form > input {
+    text-align: center;
+    border-radius: 0.5rem;
+    width: 250px;
+    height: 25px;
+}
+
+.registerForm > form > input:focus {
+    border: 3px solid #b8334d;
+    outline: none;
+}
+
+.btn-register{
+    padding: 0.5rem;
+    border-radius: 20px;
+    color: #b8334d;
+    background-color: none;
+    font-weight: bolder;
+}
+
+.btn-register:hover{
+    color: white;
+    background-color: #b8334d;
+    border-color: white;
 }

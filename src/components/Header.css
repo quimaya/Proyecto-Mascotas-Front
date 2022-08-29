@@ -1,10 +1,90 @@
-header nav {
+header{
+    height: 15vh;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #183552;
 }
 
-div {
-    min-height: 20vh
+.link{
+    margin-left: 1rem;
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.link:hover{
+    color: #b8334d;
+}
+
+header nav{
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+header > nav > ul{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.register > ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 2rem;
+}
+
+.login{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.login > p{
+    margin-right: 2rem;
+}
+
+.login > button{
+    padding: 0.3rem;
+    border: 3px solid black;
+    border-radius: 1rem;
+    color: #b8334d;
+    font-weight: bolder;
+    background-color: transparent;
+    transition: all 0.3s ease-in;
+}
+
+.login > button:hover{
+    color: white;
+    background-color: #b8334d;
+    border: 3px solid black;
+}
+
+.loginLink, .registerLink{
+    margin-left: 1rem;
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.loginLink:hover, .registerLink:hover{
+    color: #b8334d;
 }

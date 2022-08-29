@@ -1,8 +1,12 @@
 import "./Footer.css"
 const Footer = () => {
     return (
-        <div>
-            Este es el footer
+        <div className="footer">
+            <ul>
+                <li>Neoland - 2022</li>
+                <li>Enrique & Sergio</li>
+                <li>Proyecto Mascotas</li>
+            </ul>
         </div>
     )
     

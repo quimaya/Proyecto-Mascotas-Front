@@ -1,20 +1,17 @@
-const MascotaCard = ({mascotas}) => {
-    console.log(mascotas)
-    return (
-        <div>
-            {mascotas.map((mascota) => (
-                <div className="mascotaCard" key={mascota._id}>
-                    <h2>Mi mascota se llama {mascota.name}</h2>
-                    <p>Es un {mascota.raza}</p>
-                    <img src={mascota.images}/>
-                    <p>El pelaje es {mascota.pelaje ? "largo" : "corto"}</p>
-                </div>
-            )
+import './MascotaCard.css';
+import { Link } from 'react-router-dom';
 
-            )
-            }
+const MascotaCard = ({ mascotas }) => {
+  return (
+    <div className='mascota'>
+      {mascotas.map((mascota) => (
+        <div className="mascotaCard" key={mascota._id}>
+          <h2>{mascota.name}</h2>
+          <img className='image' src={mascota.images} />
+          <Link to="/infoMascota" className='infoMascota'>Info mascota</Link>
         </div>
-    )
-    
-    }
-    export default MascotaCard
+      ))}
+    </div>
+  );
+};
+export default MascotaCard;

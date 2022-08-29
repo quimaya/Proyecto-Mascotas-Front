@@ -1,3 +1,18 @@
-div {
-    min-height: 20vh
+.footer {
+    min-height: 10vh;
+    background-color: #183552;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footer > ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    font-weight: bolder;
+    color: #b8334d;
 }
