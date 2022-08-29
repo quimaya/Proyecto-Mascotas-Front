@@ -2,10 +2,13 @@ import "./Header.css"
 import { Link } from "react-router-dom"
 import { JwtContext } from "../context/jwtContext"
 import { useContext } from "react"
+import { useNavigate } from "react-router-dom"
 
 
 const Header = () => {
     const { mascota, logout } = useContext(JwtContext)
+
+    let navigate = useNavigate()
 
     return (
         <header>
@@ -14,6 +17,10 @@ const Header = () => {
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     <li> <Link to="/mascotas" >Mascotas</Link></li>
+                    {mascota ? (<li>
+                        <Link to ="/profile">Perfil</Link>
+                    </li>) : 
+                    null}
                 </ul>
             </nav>
             <div>
@@ -23,7 +30,7 @@ const Header = () => {
                             ¡Bienvenido {mascota.nick}!
                         </p>
                         <button onClick={()=>
-                        logout()
+                        logout() & navigate("/")
                         }>Cerrar sesión</button>
                     </>)
                     :

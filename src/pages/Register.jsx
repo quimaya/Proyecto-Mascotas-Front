@@ -2,6 +2,7 @@ import {useForm} from "react-hook-form"
 import { API } from "../services/API"
 import "./register.css"
 import { useNavigate } from "react-router-dom"
+import Swal from "sweetalert2"
 
 const Register = () => {
     const {register, handleSubmit} = useForm()
@@ -16,6 +17,16 @@ const Register = () => {
         formData.append("raza", data.raza)
         formData.append("images", data.images[0])
         API.post("/register", formData).then((res =>{
+            Swal.fire({
+                title: `Tu mascota ${data.nick} ha sido registrada correctamente`,
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              })
+             navigate("/login")
             if (res) navigate("/login")
             console.log("mascota regitrada", res)
         }))
