@@ -1,0 +1,20 @@
+.documentacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    gap: 20px;
+}
+
+.documentacion > img{
+    width: 58.5%;
+    border-radius: 100px;
+}
+
+.perros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}

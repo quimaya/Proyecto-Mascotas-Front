@@ -4,7 +4,6 @@ import { JwtContext } from "../context/jwtContext"
 import { useContext } from "react"
 import { useNavigate } from "react-router-dom"
 
-
 const Header = () => {
     const { mascota, logout } = useContext(JwtContext)
 
@@ -16,6 +15,7 @@ const Header = () => {
                 <h2>Mascotas & Pets</h2>
                 <ul>
                     <li><Link to="/" className="link">Home</Link></li>
+                    <li> <Link to="/documentacion" className="link">Documentacion</Link></li>
                     <li> <Link to="/mascotas" className="link">Mascotas</Link></li>
                     {mascota ? (<li>
                         <Link to ="/profile" className="link">Perfil</Link>
@@ -26,8 +26,9 @@ const Header = () => {
             <div className="sesion">
                 {mascota ?
                     (<div className="login">
-                        <p>
-                            ¡Bienvenido {mascota.nick}!
+                        <img className="login-image" src={ mascota.images } alt="avatar" />
+                        <p className="login-title">
+                            Bienvenido, {mascota.nick}
                         </p>
                         <button onClick={()=>
                         logout() & navigate("/")

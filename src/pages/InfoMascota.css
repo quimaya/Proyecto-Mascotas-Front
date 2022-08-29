@@ -1,0 +1,32 @@
+.infoMascota{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.infoMascota > img{
+    width: 50%;
+    height: 50vh;
+    border-radius: 20px;
+}
+
+.nick, .raza, .pelo, .color{
+    text-align: center;
+    width: 200px;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: black;
+    color: #b8334d;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.nick:hover, .raza:hover, .pelo:hover, .color:hover{
+    color: white;
+    background-color: #b8334d;
+}

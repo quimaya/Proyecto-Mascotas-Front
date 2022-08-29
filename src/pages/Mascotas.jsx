@@ -6,9 +6,6 @@ import { API } from "../services/API"
 
 const Mascotas = () => {
   
-
-
-
     const [allMascotas, setMascotas] =useState([])
 
     const [filtro, setFiltro] = useState("")

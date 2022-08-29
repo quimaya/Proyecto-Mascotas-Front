@@ -85,6 +85,17 @@ header > nav > ul{
     font-weight: bolder;
 }
 
+.login-image{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.login-title{
+    color: white;
+    font-weight: bolder;
+}
+
 .loginLink:hover, .registerLink:hover{
     color: #b8334d;
 }
