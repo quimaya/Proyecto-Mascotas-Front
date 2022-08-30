@@ -1,11 +1,14 @@
-const Buscador = ({setFiltro}) => {
-    
-    return (
-        <div>
+import './Buscador.css';
 
-            <input type = "text" onChange={(e) => setFiltro(e.target.value.toLowerCase())} placeholder="Busca tu mascota aquí"/>
-        </div>
-    )
-    
-    }
-    export default Buscador
+const Buscador = ({ setFiltro }) => {
+  return (
+    <div className="buscador">
+      <input
+        type="text"
+        onChange={(e) => setFiltro(e.target.value.toLowerCase())}
+        placeholder="Busca tu mascota aquí"
+      />
+    </div>
+  );
+};
+export default Buscador;

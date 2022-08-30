@@ -3,8 +3,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 50px;
+    padding: 50px;
     gap: 20px;
+    background-color: var(--background);
+    color: var(--primary-color);
 }
 
 .documentacion > img{

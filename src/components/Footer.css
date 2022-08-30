@@ -1,10 +1,11 @@
 .footer {
     min-height: 10vh;
-    background-color: #183552;
+    background-color: var(--background);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    border-top: 2px solid black;
 }
 
 .footer > ul{
@@ -14,5 +15,5 @@
     justify-content: space-around;
     list-style-type: none;
     font-weight: bolder;
-    color: #b8334d;
+    color: var(--primary-color);
 }

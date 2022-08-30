@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import { JwtContext } from '../context/jwtContext'
 import { API } from '../services/API'
 import Swal from "sweetalert2"
+import './Profile.css'
 
 const Profile = () => {
 
@@ -17,6 +18,9 @@ const Profile = () => {
     const envioFormulario = data => {
         const formulario = new FormData()
         formulario.append("name", data.name)
+        formulario.append("raza", data.raza)
+        formulario.append("pelaje", data.pelaje)
+        formulario.append("color", data.color)
         formulario.append("images", data.images[0])
         API.patch(`/update/${mascota._id}`, formulario).then((res => {
             logout();
@@ -38,9 +42,8 @@ const Profile = () => {
     return (
 
         <section>
-            <h2>Perfil</h2>
-            <h3>{mascota.name}</h3>
-
+            <div className='perfil'>
+            <h3>Perfil de {mascota.name}</h3>
             <img src={mascota.images} alt={mascota.name} />
             <form onSubmit={handleSubmit(envioFormulario)}>
 
@@ -50,10 +53,20 @@ const Profile = () => {
                 <label htmlFor="images">Modificar Imagen</label>
                 <input type="file" id="images" name="images" placeholder="Nueva imagen"{...register("images")} />
 
+                <label htmlFor="images">Modificar Raza</label>
+                <input type="text" id="raza" name="raza" placeholder="Nueva raza"{...register("raza")} />
+
+                <label htmlFor="images">Modificar Pelaje</label>
+                <input type="text" id="pelaje" name="pelaje" placeholder="Nuevo pelaje"{...register("pelaje")} />
+
+                <label htmlFor="images">Modificar Color</label>
+                <input type="text" id="color" name="color" placeholder="Nuevo color"{...register("color")} />
+
                 <button type="submit">Enviar Cambios</button>
 
 
             </form>
+            </div>
         </section>
     )
 }

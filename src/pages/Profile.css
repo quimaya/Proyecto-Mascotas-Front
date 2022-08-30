@@ -1,0 +1,45 @@
+.perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil > h3{
+    margin-top: 50px;
+}
+
+.perfil > img{
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.perfil > form > label{
+    color: var(--primary-color);
+}
+
+.perfil > form > input {
+    width: 250px;
+    height: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.perfil > form > button {
+    margin-top: 20px;
+    width: 150px;
+    height: 2rem;
+    border-radius: 10px;
+    color: var(--primary-color);
+    background-color: var(--background);
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.perfil > form > button:hover{
+    background-color: #b8334d;
+}

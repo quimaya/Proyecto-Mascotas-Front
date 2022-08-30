@@ -1,0 +1,6 @@
+.buscador > input{
+    width: 300px;
+    height: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}

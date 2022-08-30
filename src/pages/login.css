@@ -18,7 +18,7 @@
 }
 
 .Login > form > label{
-    color: #183552;
+    color: var(--primary-color);
     font-weight: bolder;
 }
 

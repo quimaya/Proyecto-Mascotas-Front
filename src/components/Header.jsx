@@ -7,7 +7,8 @@ import { useNavigate } from "react-router-dom"
 const Header = () => {
     const { mascota, logout } = useContext(JwtContext)
 
-    let navigate = useNavigate()
+    let navigate = useNavigate();
+
 
     return (
         <header>
@@ -26,7 +27,9 @@ const Header = () => {
             <div className="sesion">
                 {mascota ?
                     (<div className="login">
+                        <Link to ="/profile" className="link" >
                         <img className="login-image" src={ mascota.images } alt="avatar" />
+                        </Link>
                         <p className="login-title">
                             Bienvenido, {mascota.nick}
                         </p>

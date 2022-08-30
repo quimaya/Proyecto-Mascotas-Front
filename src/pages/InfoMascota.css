@@ -4,24 +4,24 @@
     align-items: center;
     justify-content: center;
     gap: 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--background);
 }
 
 .infoMascota > img{
-    width: 50%;
-    height: 50vh;
+    width: 512px;
     border-radius: 20px;
 }
 
 .nick, .raza, .pelo, .color{
     text-align: center;
-    width: 200px;
+    width: 350px;
     color: black;
     border: 1px solid black;
     padding: 10px;
-    background-color: black;
-    color: #b8334d;
+    background-color: var(--background);
+    color: var(--primary-color);
     border-radius: 10px;
     text-decoration: none;
 }

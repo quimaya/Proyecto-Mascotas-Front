@@ -1,0 +1,10 @@
+.btn{
+  border-radius: 50%;
+  position: absolute;
+  top: 35px;
+  right: 20px;
+}
+
+.btn > img{
+  width: 48px;
+}

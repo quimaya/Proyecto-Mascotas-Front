@@ -3,6 +3,17 @@
     color: #111c2b;
 }
 
+[data-theme='dark'] {
+    --background: #183552;
+    --background-card: white;
+    --primary-color: white;
+}
+
+[data-theme='light'] {
+    --background: white;
+    --background-card: #183552;
+}
+
 h1,h2,h3,h4:root{
     color: #b8334d;
 }
