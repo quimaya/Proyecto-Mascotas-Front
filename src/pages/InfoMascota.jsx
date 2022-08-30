@@ -10,8 +10,10 @@ const InfoMascota = () => {
 
     const [ pet, setPet ] = useState([]);
 
+    const UrlByNick = 'http://localhost:8080/api/v1/mascotaByNick';
+
     const getMascota = async() => {
-        const peticion = await axios.get(`http://localhost:8080/api/v1/mascotaByNick/${nick}`)
+        const peticion = await axios.get(`${UrlByNick}/${nick}`)
         const data = await peticion.data.mascota;
         setPet( data );
     }
@@ -29,7 +31,7 @@ const InfoMascota = () => {
        <p className='nick'> Nick: { pet.nick } </p>
        <p className='raza'> Raza: { pet.raza } </p>
        <p className='pelo'> Tipo de pelo:{ pet.pelaje } </p>
-       <p className='color'> Color de pelo: { pet.color ? <p>No se ha especificado</p> : pet.color }</p>
+       <p className='color'> Color de pelo: { !pet.color ? <p>No se ha especificado</p> : pet.color }</p>
     </div>
   )
 }
