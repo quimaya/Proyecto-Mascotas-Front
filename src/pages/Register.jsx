@@ -16,7 +16,7 @@ const Register = () => {
     formData.append("password", data.password);
     formData.append("raza", data.raza);
     formData.append("pelaje", data.pelaje);
-    formData.append("pelo", data.pelo);
+    formData.append("color", data.color);
     formData.append("images", data.images[0]);
     API.post("/register", formData).then((res) => {
       Swal.fire({
@@ -74,8 +74,8 @@ const Register = () => {
             name="pelaje"
             {...register("pelaje")}
           />
-          <label htmlFor="pelo">Color de pelo</label>
-          <input type="text" id="color" name="color" {...register("pelo")} />
+          <label htmlFor="color">Color de pelo</label>
+          <input type="text" id="color" name="color" {...register("color")} />
           <button type="submit" className="btn-register">
             {" "}
             Registro Terminado

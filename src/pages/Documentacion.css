@@ -20,3 +20,27 @@
     align-items: center;
     gap: 50px;
 }
+
+
+@media only screen and (max-width: 500px){
+    .documentacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .perros > h2{
+        text-align: center;
+    }
+
+    .perros > p{
+        text-align: justify;
+    }
+
+    .documentacion > img{
+        width: 100%;
+        border-radius: 50px;
+    }
+
+}

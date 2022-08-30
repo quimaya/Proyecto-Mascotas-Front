@@ -19,9 +19,9 @@ const Login = () => {
     }).catch( (res) => {
       console.log( res )
       if(  res.response.data === 'Mascota no encontrada'  ){
-        Swal.fire('Mascota no encontrada');
+        Swal.fire(res.response.data);
       } else {
-        Swal.fire('Password incorrecta');
+        Swal.fire(res.response.data);
       }
       return res;
     });

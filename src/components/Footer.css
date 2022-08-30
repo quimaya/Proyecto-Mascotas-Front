@@ -17,3 +17,9 @@
     font-weight: bolder;
     color: var(--primary-color);
 }
+
+@media only screen and (max-width: 500px) {
+    .footer{
+        text-align: center;
+    }
+  }

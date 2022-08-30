@@ -30,3 +30,9 @@ section > p{
     color: #b8334d;
     font-weight: bolder;
 }
+
+@media only screen and (max-width: 500px) {
+    section > h2{
+        text-align: center;
+    }
+  }
