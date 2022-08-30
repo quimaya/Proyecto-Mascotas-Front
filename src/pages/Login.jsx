@@ -2,6 +2,7 @@ import "./login.css";
 import { useForm } from "react-hook-form";
 import { API } from "../services/API";
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const Login = () => {
   const { register, handleSubmit } = useForm();
@@ -15,6 +16,14 @@ const Login = () => {
 
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("nick", JSON.stringify(res.data.mascotaInDB));
+    }).catch( (res) => {
+      console.log( res )
+      if(  res.response.data === 'Mascota no encontrada'  ){
+        Swal.fire('Mascota no encontrada');
+      } else {
+        Swal.fire('Password incorrecta');
+      }
+      return res;
     });
   };
 

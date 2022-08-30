@@ -22,7 +22,7 @@
 
 .mascotaCard > h2{
     font-weight: bolder;
-    color: #b8334d;
+    color: var(--title-web);
     font-size: 1.25rem;
 }
 

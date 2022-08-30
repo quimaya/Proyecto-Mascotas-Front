@@ -14,8 +14,8 @@
 [data-theme='light'] {
     --background: wheat;
     --background-secondary: white;
-    --title-web: #b8334d;
     --background-card: #183552;
+    --title-web: #b8334d;
 }
 
 h1,h2,h3,h4:root{
