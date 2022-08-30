@@ -6,11 +6,15 @@
 [data-theme='dark'] {
     --background: #183552;
     --background-card: white;
+    --background-secondary: #183552;
     --primary-color: white;
+    --title-web: wheat;
 }
 
 [data-theme='light'] {
-    --background: white;
+    --background: wheat;
+    --background-secondary: white;
+    --title-web: #b8334d;
     --background-card: #183552;
 }
 

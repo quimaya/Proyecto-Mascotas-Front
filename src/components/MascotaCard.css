@@ -36,6 +36,9 @@
     color: var(--primary-color);
 }
 
-.infoMascota:hover{
-    text-decoration: underline;
+.infoMascota{
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
 }

@@ -7,8 +7,9 @@ import { useNavigate } from "react-router-dom"
 const Header = () => {
     const { mascota, logout } = useContext(JwtContext)
 
-    let navigate = useNavigate();
+    
 
+    let navigate = useNavigate();
 
     return (
         <header>

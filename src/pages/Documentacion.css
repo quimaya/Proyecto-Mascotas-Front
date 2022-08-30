@@ -5,7 +5,7 @@
     justify-content: center;
     padding: 50px;
     gap: 20px;
-    background-color: var(--background);
+    background-color: var(--background-secondary);
     color: var(--primary-color);
 }
 

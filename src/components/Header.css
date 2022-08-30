@@ -28,6 +28,10 @@ header nav{
     flex-direction: row;
 }
 
+nav > h2{
+    color: var(--title-web);
+}
+
 header > nav > ul{
     display: flex;
     flex-wrap: wrap;

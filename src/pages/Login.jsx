@@ -9,8 +9,6 @@ const Login = () => {
   let navigate = useNavigate();
 
   const formSubmit = (formData) => {
-    //Post a https://localhost:8080/api/v1/login
-    //Enviar formData = nick y password
     API.post("/login", formData).then((res) => {
       navigate("/mascotas");
       console.log(formSubmit);
