@@ -35,7 +35,7 @@ const App = () => {
       <div className="App" data-theme={theme}>
         <Router>
             <button className="btn" onClick={switchTheme}>
-              <img src="/moon.png" alt="imagen" />
+              { theme === 'light' ? <img src="/sun.png" alt="sun"/>: <img src="/moon.png" alt="moon" /> }
             </button>
           <Header />
           <Routes>
