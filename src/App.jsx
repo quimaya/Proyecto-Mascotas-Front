@@ -43,9 +43,9 @@ const App = () => {
             <Route
               path="/mascotas"
               element={
-                <RequiredAuth>
+                
                   <Mascotas />
-                </RequiredAuth>
+                
               }
             />
             <Route
