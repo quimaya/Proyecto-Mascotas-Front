@@ -16,7 +16,7 @@ const Mascotas = () => {
     )
 
     const getAllMascotas = async () => {
-        API.get("/").then((resMascotas) => {
+        API.get("/pets").then((resMascotas) => {
             setMascotas(resMascotas.data.results.mascotas)
         })
     }
