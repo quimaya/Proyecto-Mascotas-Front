@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
-import { API } from '../services/API';
+import { get } from '../services/API';
 import './InfoMascota.css';
 
 const InfoMascota = () => {
@@ -10,10 +10,10 @@ const InfoMascota = () => {
 
     const [ pet, setPet ] = useState([]);
 
-    const UrlByNick = 'http://localhost:8080/api/v1/mascotaByNick';
+    const UrlByNick = '/mascotaByNick';
 
     const getMascota = async() => {
-        const peticion = await axios.get(`${UrlByNick}/${nick}`)
+        const peticion = await httpGet(`${UrlByNick}/${nick}`)
         const data = await peticion.data.mascota;
         setPet( data );
     }

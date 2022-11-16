@@ -16,9 +16,8 @@ const Mascotas = () => {
     )
 
     const getAllMascotas = async () => {
-        get("/pets").then((resMascotas) => {
-            setMascotas(resMascotas.data.results.mascotas)
-        })
+        const resMascotas = await httpGet("/pets");
+        setMascotas(resMascotas.data.results.mascotas)
     }
 
     useEffect(() => {

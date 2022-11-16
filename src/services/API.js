@@ -28,8 +28,8 @@ const http = (url, method, data) => {
     });
 };
 
-export const get = (url) => {
-    return http(baseURL + url, 'GET', null);
+export const httpGet = async (url) => {
+    return await http(baseURL + url, 'GET', null);
 };
 
 
