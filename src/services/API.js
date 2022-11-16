@@ -1,6 +1,6 @@
 import axios from "axios"
 
-export const APIHeaders = {
+/*export const APIHeaders = {
     Accept: "application/json",
     "Content-Type": "application/json",
     "Access-Control-Allow-Origin": "*",
@@ -16,4 +16,20 @@ export const API = axios.create ({
     baseURL: "http://18.159.246.168:8090/api/v1",
     timeout: 6000,
     headers: APIHeaders,
-})
+})*/
+
+const baseURL = "http://18.159.246.168:8090/api/v1";
+
+const http = (url, method, data) => {
+    return axios({
+        url,
+        method,
+        data,
+    });
+};
+
+export const get = (url) => {
+    return http(baseURL, 'GET', null);
+};
+
+
