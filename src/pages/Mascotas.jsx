@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import MascotaCard from "../components/MascotaCard"
 import Buscador from "../components/Buscador"
-import { get } from "../services/API"
+import { httpGet } from "../services/API"
 import './Mascotas.css'
 
 const Mascotas = () => {
@@ -17,6 +17,7 @@ const Mascotas = () => {
 
     const getAllMascotas = async () => {
         const resMascotas = await httpGet("/pets");
+        console.log(resMascotas)
         setMascotas(resMascotas.data.results.mascotas)
     }
 
