@@ -29,7 +29,7 @@ const http = (url, method, data) => {
 };
 
 export const get = (url) => {
-    return http(baseURL, 'GET', null);
+    return http(baseURL + url, 'GET', null);
 };
 
 
